@@ -4,43 +4,47 @@
 <head>
 	<meta charset="utf-8">
 	<title>GifTastic</title>
-</head>
-<body>
-<h1>Add an Animal</h1>
-<button id="submit">Submit</button>
 
-<!--Link to jQuery-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!--Link to jQuery-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12">
+				<button data-hero="batman">Batman</button>
+				<button data-hero="spiderman">Spiderman</button>
+				<button data-hero="superman">Superman</button>
+				<button data-hero="wolverine">Wolverine</button>
+				<div id="gifs appear here">	
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8">
+			</div>
+
+			<div class="col-lg-4">
+				<h1>Add a Character from a Comic</h1>
+				<input type="text" class="form-control">
+				<br>
+				<button id="submit">Submit</button>
+			</div>
+		</div>
+	</div>
 
 <!--JavaScript-->
-<script type="text/javascript">
-
-var topics="";	
-//API Key
-var APIKey = "0c9a3a752e1346f7b0c2bc714127e701";
-
-//Variable for URL
-var queryURL = "http://api.giphy.com/v1/gifs/trending?api_key=0c9a3a752e1346f7b0c2bc714127e701"
-
-
-$('#submit').on('click', function(){
-	console.log("clicking");
-})
-
-$.ajax({
-	url: queryURL,
-	method: "GET"
-})
-
-.done(function(response){
-
-	console.log(queryURL);
-
-	console.log(response);
-})
-
-
-</script>
-
+<script type="text/javascript" src="app.js"></script>
 </body>
 </html>
