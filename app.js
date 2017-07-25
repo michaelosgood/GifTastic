@@ -1,3 +1,5 @@
+//Michael Osgood / GifTastic HW
+
 $(function(){
 	populateButtons(searchArray, 'searchButton', '#buttonsArea');
 	console.log('Page Loaded');
@@ -19,7 +21,7 @@ function populateButtons(searchArray,classToAdd,areaToAddTo){ //function to popu
 //display gifs when button is clicked on
 $(document).on('click','.searchButton',function(){
 	$('#searches').empty(); 
-	$('#searches').prepend('<h2>Click on image to animate</h2>');
+	$('#searches').prepend('<h2>click on image to animate</h2>');
 	var type = $(this).data('type'); //gathers the data from our buttons
 	var queryURL = 'http://api.giphy.com/v1/gifs/search?q='+type+'&api_key=0c9a3a752e1346f7b0c2bc714127e701&limit=10'; //our url that will get data from giphy.api
 	$.ajax({url:queryURL,method: 'GET'}) //puts the request in for our data
