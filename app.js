@@ -23,7 +23,7 @@ $(document).on('click','.searchButton',function(){
 	$('#searches').empty(); 
 	$('#searches').prepend('<h2>click on image to animate</h2>');
 	var type = $(this).data('type'); //gathers the data from our buttons
-	var queryURL = 'http://api.giphy.com/v1/gifs/search?q='+type+'&api_key=0c9a3a752e1346f7b0c2bc714127e701&limit=10'; //our url that will get data from giphy.api
+	var queryURL = 'https://api.giphy.com/v1/gifs/search?q='+type+'&api_key=0c9a3a752e1346f7b0c2bc714127e701&limit=10'; //our url that will get data from giphy.api
 	$.ajax({url:queryURL,method: 'GET'}) //puts the request in for our data
 		.done(function(response){ //return the response within a function
 			for (var i=0;i<response.data.length;i++){
