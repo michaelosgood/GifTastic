@@ -1,4 +1,4 @@
-//Michael Osgood / GifTastic HW
+//Michael Osgood / GifTastic 
 
 $(function(){
 	populateButtons(searchArray, 'searchButton', '#buttonsArea');
@@ -46,7 +46,7 @@ $(document).on('click','.searchButton',function(){
 }) 
 
 //This allows a still image to animate if clicked on and an animated image to become still 
-$(document).on('click','.searchImage',function(){ //execute the function when our im
+$(document).on('click','.searchImage',function(){ //execute the function when an image is clicked
 	var state = $(this).attr('data-state'); //setting our image state to the state of the image (either still or animated)
 	if(state === 'still'){
 		$(this).attr('src', $(this).data('animated'));
