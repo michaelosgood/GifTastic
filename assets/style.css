@@ -6,6 +6,12 @@ body {
 	color: #ff00bf;
 }
 
+#logo {
+	padding-left: 10%;
+	padding-right: 10%;
+	background-color: orange;
+}
+
 #searches {
 	width: 70%;
 }
@@ -39,4 +45,12 @@ input[type="submit"]:hover {
 
 button.active {
 	background: #0040ff;
+}
+button:hover,
+input[type="submit"]:hover {
+  background: #334e4d;
+}
+
+button.active {
+  background: #334e4d;
 }
