@@ -2,14 +2,14 @@
 
 body {
 	font: 20px times, sans-serif;
-	background: #00ff00;
-	color: #ff00bf;
+	background: #d3d3d3;
+	color: #000000;
 }
 
 #logo {
 	padding-left: 10%;
 	padding-right: 10%;
-	background-color: orange;
+	background-color: #d3d3d3;
 }
 
 #searches {
@@ -17,7 +17,7 @@ body {
 }
 
 #search-input {
-	background-color: #00ffff;
+	background-color: #00ff4f;
 }
 
 .search-item {
@@ -30,9 +30,9 @@ input[type="text"] {
 
 button,
 input[type="submit"] {
-	background-color: #00ffff;
+	background-color: #00ff4f;
 	margin-top: 15%;
-	color: #ff00bf;
+	color: #000000;
 	padding: 5px 20px;
 	font-size: 20px;
 	margin: 15px 5px 5px 15px;
